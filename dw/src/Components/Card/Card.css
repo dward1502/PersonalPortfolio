@@ -1,0 +1,28 @@
+.card-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   grid-gap: 20px;
+   align-items: stretch;
+}
+
+.card-grid>div {
+   background-color: black;
+}
+
+.card-grid>div img {
+   max-width: 100%;
+   max-height: 100%;
+   overflow: hidden;
+}
+
+.text {
+   padding: 0 20px 20px;
+}
+
+.text>button {
+   background: rgb(29, 58, 1);
+   border: 0;
+   color: chartreuse;
+   padding: 10px;
+   width: 100%;
+}

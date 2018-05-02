@@ -1,0 +1,28 @@
+.navbar {
+   grid-area: nav;
+   grid-column: span 9;
+}
+
+.billboard {
+   display: grid;
+   grid-area: billboard;
+   grid-column: span 9;
+   grid-template-areas: "billboard-contents";
+}
+
+.about-items {
+   grid-area: about;
+   grid-column: span 9;
+}
+
+.work-items {
+   grid-area: work;
+   grid-column: span 9;
+}
+
+.card-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   grid-gap: 20px;
+   align-items: stretch;
+}

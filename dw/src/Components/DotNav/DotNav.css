@@ -1,0 +1,25 @@
+.dot-nav {
+   height: 100vh;
+   width: 80px;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   right: 0;
+   background-color: transparent;
+   text-align: center;
+}
+
+.dot-nav ul {
+   list-style-type: none;
+   text-align: center;
+}
+
+.dot-nav ul li {
+   width: 10px;
+}
+
+.dot-nav ul li a:hover svg {
+   top: 0;
+   right: 0;
+   width: 10px;
+}
