@@ -26,3 +26,26 @@
    padding: 10px;
    width: 100%;
 }
+.git{   
+   margin-left: 5px;
+   padding: 10px;
+   width: 80%;
+   height: 20px;
+   background-color : rgb(29, 58, 1);
+   color: chartreuse;
+   cursor: pointer;
+}
+.hero{
+  margin-left: 5px;
+  padding: 10px;
+  width: 80%;
+  height: 20px;
+  background-color: rgb(29, 58, 1);
+  color: chartreuse;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+a{
+   text-decoration: none;
+   color: white;
+}
