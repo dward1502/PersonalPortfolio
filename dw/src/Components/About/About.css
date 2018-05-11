@@ -18,7 +18,13 @@
 }
 
 .about-image {
-   width: 100%;
-   height: 100%;
-   overflow: hidden;
+   width: 400px;
+   height: 300px;
+   margin-left: 10%;
+   /* overflow: hidden; */
+}
+.lead{
+   color: rgb(174, 14, 22);
+   font-weight: 500;
+   font-size: 3rem;
 }

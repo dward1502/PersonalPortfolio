@@ -12,10 +12,10 @@ const Card = props => (
 
          </div>
          <div className='hero'>
-            <a href={props.herokuLink} target='_blank'>{props.herbutton}</a>
+            <a href={props.herokuLink} target='_blank' rel="noopener noreferrer">{props.herbutton}</a>
          </div>
          <div className='git'>
-            <a href={props.githubLink} target='_blank'>{props.gitbutton}</a>
+            <a href={props.githubLink} target='_blank' rel="noopener noreferrer">{props.gitbutton}</a>
          </div>
       </div>
    </div>

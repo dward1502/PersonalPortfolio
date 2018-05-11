@@ -1,5 +1,6 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
+import img from '../../Images/woodProfilepic.png';
 import "./About.css";
 
 const About = () => {
@@ -14,13 +15,13 @@ const About = () => {
                <div className='vertical-center'>
                   <div className='about-grid-container'>
                      <div className='about-image'>
-                           <img src='' alt="personal" />
+                           <img src={img} alt="personal" />
                      </div>
                      <div className='about-about'>
                         <div className='about-content-wrapper'>
-                           <h3>About Me</h3>
-                           <h1>Daniel Ward</h1>
-                           <p className='lead'>Wench lad jolly boat Sail ho tack brig overhaul scuttle quarterdeck come about code of conduct marooned rigging boatswain fluke fire ship bowsprit transom Blimey Jolly Roger Plate Fleet parrel knave smartly.   
+                              <h3>Daniel Ward</h3>
+                           <h1>About Me</h1>
+                              <p className='lead'>I find that I have a passion for connecting needs of companies/individuals and creating an internet based app/service to help them in their need. I love internet technologies and learning new methods everyday. I have experience in developing full stack applications. I work in Javascript and have a good handle on object/functional programming, HTML 5 and CSS3 including SASS and CSS grid. I understand how to make websites/apps fully responsive and integrated with SEO, local/session storage and deploying in an AWS infrastructure.
                            </p>
                         </div>
                      </div>

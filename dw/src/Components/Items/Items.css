@@ -13,4 +13,47 @@
 
 .work-content-wrapper {
    padding: 30px;
+ grid-column: 2/3;
 }
+.work-image {
+   width: 500px;
+   height: 500px;
+   background: linear-gradient(250deg, #13681f, #0d419b, #b7d71d);
+   background-size: 200% 200%;
+   -webkit-animation: AnimationName 18s ease infinite;
+   -moz-animation: AnimationName 18s ease infinite;
+   animation: AnimationName 18s ease infinite;
+}
+   @-webkit-keyframes AnimationName {
+      0% {
+         background-position: 0% 60%
+      }
+      50% {
+         background-position: 100% 41%
+      }
+      100% {
+         background-position: 0% 60%
+      }
+   }
+   @-moz-keyframes AnimationName {
+      0% {
+         background-position: 0% 60%
+      }
+      50% {
+         background-position: 100% 41%
+      }
+      100% {
+         background-position: 0% 60%
+      }
+   }
+   @keyframes AnimationName {
+      0% {
+         background-position: 0% 60%
+      }
+      50% {
+         background-position: 100% 41%
+      }
+      100% {
+         background-position: 0% 60%
+      }
+   }
