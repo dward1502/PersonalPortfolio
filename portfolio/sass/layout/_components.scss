@@ -16,7 +16,7 @@
     text-transform: uppercase;   
     text-decoration: none;
     font-size: 2rem;
-    color: grey;    
+    color: $color-black;    
 
     &:hover {
       color: $color-white;
@@ -39,6 +39,18 @@
      height: 95vh;
    }
 
+   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+          only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+          only screen and (min-width: 125em) {
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light,.08), rgba($color-primary-dark, 0.8), url(../images/breakingWave.jpg));
+          }
+
+
+   @include respond(phone) {
+     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+   }
+
   &__logo {
     width: 10rem;
     height: 10rem;
@@ -47,10 +59,10 @@
   &__logo-box {
     position: absolute;
     top: 4rem;
-    left: 4rem;
+    left: 6rem;
   }
   &__text-box {
-    position: absolute;
+   position: absolute;
    top: 40%;
    left: 50%;
    transform: translate(-50%,-50%);
@@ -72,11 +84,13 @@
   font-size: 1.8rem;
   width: 70%;
   margin: 0 15% 0 15%;
+  line-height: 1.1;
 
   &-1{
     text-align: center;
     font-size: 2.6rem;
     margin-bottom: 2rem;
+    line-height: 1.4;
   }
   &-2 {
     text-indent: 3rem;
@@ -107,35 +121,78 @@
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16,5rem);
   grid-gap: 1rem;
+  @include respond(phone) {
+    grid-template-rows: repeat(19,8rem);
+  }
   &__1 {
-    background-color: grey;
+   // background-color: grey;
     grid-row: 1 / 8;
     grid-column: 1 / 6;
+    & img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    @include respond(phone) {
+      grid-row: 1 / 4;
+      grid-column: 1 / 17;
+      margin-bottom: 1rem;
+    }
   }
   &__2 {
-    background-color: grey;
+   // background-color: grey;
     grid-row: 1 / 8;
     grid-column: 7 / 12;
+    & img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    @include respond(phone) {
+      grid-row: 4 / 7;
+      grid-column: 1 / 17;
+      margin-bottom: 1rem;
+    }
   }
   &__3 {
      background-color: grey;
      grid-row: 1 / 8;
      grid-column: 13 / 17;
+     @include respond(phone) {
+      grid-row: 7 / 10;
+      grid-column: 1 / 17;
+      margin-bottom: 2rem;
+    }
   }
   &__4 {
      background-color: grey;
      grid-row: 9 / 17;
      grid-column: 1 / 6;
+       @include respond(phone) {
+      grid-row: 10 / 13;
+      grid-column: 1 / 17;
+      margin-bottom: 2rem;
+    }
   }
   &__5 {
     background-color: grey;
     grid-row: 9 / 17;
     grid-column: 7 / 12;
+      @include respond(phone) {
+      grid-row: 13 / 16;
+      grid-column: 1 / 17;
+      margin-bottom: 2rem;
+    }
   }
   &__6 {
     background-color: grey;
     grid-row: 9 / 17;
     grid-column: 13 / 17;
+      @include respond(phone) {
+      grid-row: 16 / 19;
+      grid-column: 1 / 17;
+      margin-bottom: 2rem;
+    }
   }
 }
 
@@ -150,12 +207,13 @@
     color: inherit;
     padding: 1.5rem 2rem;
     border-radius: 2px;
-    background-color: rgba($color-white,.5);
+    background-color: rgba($color-white,.8);
     border: none;
     border-bottom: 3px solid transparent;
     width: 90%;
     display: block;
     transition: all .3s;
+
     @include respond(tab-port) {
       width: 100%;
     }
@@ -187,14 +245,16 @@
   }
 }
 .social {
-  margin-top: 10rem;
+  margin-top: 15rem;
   img{
-    margin: 0 2rem;
+    margin: 2rem;
   }
 }
-
-
-
+#social {
+  @include respond (phone) {
+    display: none;
+  }
+}
 
 //BUTTONS
 .btn {

@@ -23,18 +23,23 @@
 }
 .section-projects {
   background-image: linear-gradient( to bottom, rgba($color-primary-light, .8), rgba($color-primary-dark, .8));
-  height: 111.5vh;
+  height: 140vh;
   padding: 3rem;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+
+  @include respond(phone) {
+    height: 210vh;
+  }
 }
 .section-contact {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark);
 }
+
 .contact {
   background-image: linear-gradient(105deg, rgba($color-grey-dark, .9)0%, rgba($color-white, .9) 50%, transparent 50%),
   url(../images/breakingWave.jpg);
-  background-size: 100%;
+  background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
   display: flex;
@@ -43,12 +48,8 @@
     width: 50%;
     padding: 6rem;
     flex-direction: column;
-
-    @include respond(tab-land) {
-      width: 65%;
-    }
-    @include respond(tab-port) {
-      width: 100%;
+    @include respond(phone) {
+      padding: 6rem 0rem 6rem 6rem;
     }
   }
   &__social {
