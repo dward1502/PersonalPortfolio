@@ -1,0 +1,10 @@
+@import './variables';
+@import './mixins';
+
+.content{
+    // min-height: 100vh;
+    padding: 2rem;
+    @include respond(phone-md) {
+        padding: 0;
+    }
+}
