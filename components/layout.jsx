@@ -6,7 +6,7 @@ import styles from '../sass/Home.module.scss'
 const layout = ({children}) => {
   return (
     <Fragment>
-        <Navigation/>
+        {/* <Navigation/> */}
         <main className={styles.content}>{children}</main>
     </Fragment>
   )

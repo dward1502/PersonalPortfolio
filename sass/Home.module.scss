@@ -8,3 +8,21 @@
         padding: 0;
     }
 }
+.image_wrapper {
+    z-index: 1;
+    width: 100%;
+    height: 60rem;
+    // position:relative;
+}
+.image {
+   object-fit: contain;
+   width: 100%;
+   position: relative;
+}
+.info {
+    position: relative;
+}
+.projectSection {
+    height: 50rem;
+    position: relative;
+}
