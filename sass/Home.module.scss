@@ -1,28 +1,49 @@
 @import './variables';
 @import './mixins';
 
-.content{
-    // min-height: 100vh;
-    padding: 2rem;
-    @include respond(phone-md) {
-        padding: 0;
-    }
-}
 .image_wrapper {
-    z-index: 1;
-    width: 100%;
-    height: 60rem;
-    // position:relative;
+  width: 100%;
+  height: 100vh;
+  clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
 }
-.image {
-   object-fit: contain;
-   width: 100%;
-   position: relative;
+.projectHero {
+  width: 100%;
+  height: 50rem;
+  background-color: #1c3c43;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding:4rem;
+  & h1 {
+    font-size: 30rem;
+    opacity: 0.27;
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+  }
 }
-.info {
-    position: relative;
+.projects {
+  width: 100%;
+  padding: 4rem;
+  // background-color: white;
+  height: 50rem;
 }
-.projectSection {
-    height: 50rem;
-    position: relative;
+.skills {
+  width: 100%;
+  background-color: #576563;
+  height: 50rem;
+  clip-path: polygon(0 21%, 100% 0, 100% 100%, 0% 100%);
+  padding-top: 20rem;
+  display: flex;
+  justify-content: center;
+  & h1 {
+    font-size: 15rem;
+    font-family: 'Roboto', sans-serif;
+    color: #1c3c43;
+  }
+}
+.contact {
+  width: 100%;
+  height: 40rem;
+  background-color: #6b94b1;
+//   clip-path: polygon(100% 0, 76% 18%, 51% 1%, 24% 18%, 0 0);
 }
