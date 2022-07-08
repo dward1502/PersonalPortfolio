@@ -23,10 +23,41 @@
 }
 .projects {
   width: 100%;
-  padding: 4rem;
+  // padding: 2rem;
   // background-color: white;
-  height: 50rem;
+  // height: 50rem;
 }
+
+.projects {
+  width: 100%;
+  box-sizing: border-box;
+  height: 50rem;
+  padding: 4rem;
+  display: flex;
+}
+
+.projectInfoBox {
+  background-color: grey;
+  width: 50%;
+  padding: 5rem;
+}
+.infoBox {
+ background-color: #6F8698;
+ height: 100%;
+ width: 100%;
+ border: .3rem solid black;
+ display: flex;
+ flex-direction: column;
+}
+.projectImageBox {
+  background-color: yellow;
+  width: 50%;
+}
+
+
+
+
+
 .skills {
   width: 100%;
   background-color: #576563;

@@ -21,7 +21,38 @@ export default function Home() {
       <section className={styles.projectHero}>
         <h1>Projects</h1>
       </section>
-      <section className={styles.projects}></section>
+      <section className={styles.projects}>
+        <div className={styles.projectInfoBox}>
+          <div className={styles.infoBox}>
+            <h1>Title</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Doloribus iusto expedita molestias nam, ipsa incidunt minima,
+              asperiores culpa nesciunt voluptas distinctio, quidem dolore
+              dolores. Odio animi harum enim, facere aliquam dignissimos vitae!
+            </p>
+            <ul>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+            </ul>
+            <div className={styles.project_btns}>
+              <div className={styles.linkBtn}>
+                <a href='#'>Github</a>
+              </div>
+              <div className={styles.linkBtn}>
+                <a href='#'>Live Link</a>
+              </div>
+              <div className={styles.linkBtn}>
+                <a href='#'>Walkthrough</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.projectImageBox}></div>
+      </section>
       <section className={styles.skills}>
         <h1>Skills &amp; Tools</h1>
       </section>
