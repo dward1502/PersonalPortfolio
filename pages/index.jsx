@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
+import {FaGlobe, FaGithub, FaYoutube} from 'react-icons/fa'
+
 import styles from '../sass/Home.module.scss';
 
 export default function Home() {
@@ -32,21 +34,21 @@ export default function Home() {
               dolores. Odio animi harum enim, facere aliquam dignissimos vitae!
             </p>
             <ul>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto earum sit minima numquam dicta consequuntur quasi?</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto earum sit minima numquam dicta consequuntur quasi?</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto earum sit minima numquam dicta consequuntur quasi?</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto earum sit minima numquam dicta consequuntur quasi?</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto earum sit minima numquam dicta consequuntur quasi?</li>
             </ul>
             <div className={styles.project_btns}>
               <div className={styles.linkBtn}>
-                <a href='#'>Github</a>
+               <FaGithub/> <a href='#'>Github</a>
               </div>
               <div className={styles.linkBtn}>
-                <a href='#'>Live Link</a>
+                <FaGlobe/><a href='#'>Live Link</a>
               </div>
               <div className={styles.linkBtn}>
-                <a href='#'>Walkthrough</a>
+                <FaYoutube/><a href='#'>Walkthrough</a>
               </div>
             </div>
           </div>
