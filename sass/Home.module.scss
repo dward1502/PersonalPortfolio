@@ -1,5 +1,5 @@
-@import './variables';
-@import './mixins';
+@import "./variables";
+@import "./mixins";
 
 .image_wrapper {
   width: 100%;
@@ -9,7 +9,7 @@
 .projectHero {
   width: 100%;
   height: 50rem;
-  background-color: #1c3c43;
+  background-color: rgb(28, 60, 67);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,26 +18,24 @@
     font-size: 30rem;
     opacity: 0.27;
     color: grey;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
-}
-.projects {
-  width: 100%;
-  // padding: 2rem;
-  // background-color: white;
-  // height: 50rem;
 }
 
 .projects {
   width: 100%;
   box-sizing: border-box;
-  height: 50rem;
+  // height: 50rem;
   padding: 4rem;
   display: flex;
+  flex-direction: column;
+}
+.project {
+  display: flex;
+  margin: 2rem 4rem;
 }
 
 .projectInfoBox {
-  background-color: grey;
   width: 50%;
   padding: 5rem;
   display: flex;
@@ -45,42 +43,104 @@
   align-items: center;
 }
 .infoBox {
- background-color: #6F8698;
-//  height: 100%;
- width: 40rem;
- border: .3rem solid black;
- display: flex;
- flex-direction: column;
- padding: 2rem;
+  background-color: #6f8698;
+  width: 40rem;
+  //  border: .3rem solid #1C3C43;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  box-shadow: 2px 2px 16px 4px rgba(0, 0, 0, 0.5);
+
+  & h1 {
+    font-size: 2.8rem;
+  }
+}
+
+.list {
+  list-style-type: square;
+  margin: 1.8rem;
+  padding: 0;
 }
 .projectImageBox {
-  background-color: yellow;
+  // background-color: yellow;
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.image_1 {
+  width: 25rem;
+  height: 25rem;
+  position: relative;
+  z-index: 10;
+  transition: all 0.8s ease-in;
+  &:hover {
+    scale: 1.3;
+    z-index: 100;
+    outline: 0.5rem solid #576563;
+    outline-offset: 1.5rem;
+    transition: all 0.8s ease-in;
+  }
+}
+.image_2 {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  z-index: 4;
+  margin-left: -10rem;
+  margin-top: -15rem;
+  transition: all 0.8s ease-in;
+  &:hover {
+    scale: 1.3;
+    z-index: 100;
+    outline: 0.5rem solid #576563;
+    outline-offset: 1.5rem;
+    transition: all 0.8s ease-in;
+  }
+}
+.image_3 {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  z-index: 6;
+  margin-left: -15rem;
+  margin-top: 15rem;
+  transition: all 0.8s ease-in;
+  &:hover {
+    scale: 1.3;
+    z-index: 100;
+    outline: 0.5rem solid #576563;
 
-
-
-
+    outline-offset: 1.5rem;
+    transition: all 0.8s ease-in;
+  }
+}
 
 .skills {
   width: 100%;
   background-color: #576563;
-  height: 50rem;
+  // height: 50rem;
   clip-path: polygon(0 21%, 100% 0, 100% 100%, 0% 100%);
   padding-top: 20rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
   & h1 {
     font-size: 15rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #1c3c43;
+    opacity: 0.7;
   }
 }
 .contact {
   width: 100%;
-  height: 40rem;
   background-color: #6b94b1;
-//   clip-path: polygon(100% 0, 76% 18%, 51% 1%, 24% 18%, 0 0);
+  //   clip-path: polygon(100% 0, 76% 18%, 51% 1%, 24% 18%, 0 0);
 }
 .project_btns {
   display: flex;
@@ -88,20 +148,64 @@
   margin-top: 2rem;
 }
 .linkBtn {
-  background-color: #576563;
-  border: .2rem solid black;
+  background-color: #1c3c43;
+  color: #8bb6d4;
+  border: 0.2rem solid #1c3c43;
+  border-radius: 2rem;
   font-size: 1.2rem;
-  padding: .5rem 1rem;
-  font-family: 'Roboto', sans-serif;
+  padding: 0.5rem 1rem;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   width: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1rem;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.39);
   & a {
     text-decoration: none;
-    color: black;
+    color: #6b94b1;
     margin-left: 1rem;
   }
+  &:hover {
+    scale: 1.1;
+    transition: all 0.3s ease-in;
+  }
+}
+.skillsBox {
+  width: 60rem;
+  height: 40rem;
+  background-color: #243746;
+  color: #576563;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+  // align-items: center;
+  padding: 4rem;
+  margin-bottom: 10rem;
+}
+.margin {
+  margin: 1rem;
+}
+
+.contactBox {
+  display: flex;
+}
+.contact_leftbox {
+  width: 50%;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.contact_social {
+  width: 50%;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  display: flex;
+  flex-direction: column;
 }
