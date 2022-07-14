@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 
-import { FaGlobe, FaGithub, FaYoutube, FaRegEnvelope } from "react-icons/fa";
+import { FaGlobe, FaGithub, FaYoutube, FaRegEnvelope, FaLinkedin, FaCodepen } from "react-icons/fa";
 import {
   DiCss3,
   DiReact,
@@ -191,13 +191,14 @@ export default function Home() {
               <label htmlFor="email" className={styles.label}>Email</label>
               <input type="text" className={styles.input}/>
               <label htmlFor="Message" className={styles.label}>Message</label>
-              <textarea name="message" cols="30" rows="10" className={styles.message}></textarea>
-              <button>Send Email <FaRegEnvelope/></button>
+              <textarea name="message" className={styles.message}></textarea>
+              <button className={styles.btn}>Send Email <FaRegEnvelope/></button>
             </form>
           </div>
           <div className={styles.contact_social}>
-              <a href="http://" target="_blank" rel="noopener noreferrer"><FaGithub/></a>
-              <a href=""></a>
+              <a href="http://" target="_blank" rel="noopener noreferrer" ><FaGithub size={60} color={"#fff"}/></a>
+              <a href="http://" target="_blank" rel="noopener noreferrer" ><FaLinkedin size={60} color={"#fff"}/></a>
+              <a href="http://" target="_blank" rel="noopener noreferrer" ><FaCodepen size={60} color={"#fff"}/></a>
           </div>
         </div>
       </section>
