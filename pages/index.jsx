@@ -34,6 +34,12 @@ export default function Home() {
           layout="fill"
           objectFit="cover"
         />
+        <div className={styles.header_text}>
+          <h1>Daniel Ward</h1>
+          <p>Fullstack Developer</p>
+          <p>and surfer.emoji</p>
+          <button>About Me</button>
+        </div>
       </div>
       <section className={styles.projectHero}>
         <h1>Projects</h1>
@@ -178,7 +184,7 @@ export default function Home() {
           <DiWordpress size={80} className={styles.margin} />
           <DiDocker size={80} className={styles.margin} />
           <SiJest size={80} className={styles.margin} />
-          <SiTypescript size={80} />
+          <SiTypescript size={80} className={styles.margin}/>
         </div>
       </section>
       <section className={styles.contact}>
@@ -192,7 +198,7 @@ export default function Home() {
               <input type="text" className={styles.input}/>
               <label htmlFor="Message" className={styles.label}>Message</label>
               <textarea name="message" className={styles.message}></textarea>
-              <button className={styles.btn}>Send Email <FaRegEnvelope/></button>
+              <button className={styles.btn}>Send Email <span><FaRegEnvelope/></span></button>
             </form>
           </div>
           <div className={styles.contact_social}>

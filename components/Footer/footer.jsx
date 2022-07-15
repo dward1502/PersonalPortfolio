@@ -1,11 +1,11 @@
 import React from 'react'
 
-import styles from './footer.scss'
+import styles from '../../sass/Home.module.scss'
 
 const footer = () => {
   return (
     <div className={styles.footer}>
-        &copy;
+      <p>&copy; 2021 | Designed &amp; coded by Daniel Ward</p>
     </div>
   )
 }

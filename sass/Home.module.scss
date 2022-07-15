@@ -5,6 +5,12 @@
   width: 100%;
   height: 100vh;
   clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
+  position: relative;
+}
+.header_text {
+  position: absolute;
+  margin-top: 20rem;
+  margin-left: 15rem;
 }
 .projectHero {
   width: 100%;
@@ -72,7 +78,7 @@
   align-items: center;
 }
 .image_1 {
-  width: 25rem;
+  width: 35rem;
   height: 25rem;
   position: relative;
   z-index: 10;
@@ -86,7 +92,7 @@
   }
 }
 .image_2 {
-  width: 20rem;
+  width: 30rem;
   height: 20rem;
   position: relative;
   z-index: 4;
@@ -102,7 +108,7 @@
   }
 }
 .image_3 {
-  width: 20rem;
+  width: 30rem;
   height: 20rem;
   position: relative;
   z-index: 6;
@@ -130,11 +136,13 @@
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
+  
   & h1 {
     font-size: 15rem;
     font-family: "Roboto", sans-serif;
     color: #1c3c43;
-    opacity: 0.7;
+    opacity: 0.65;
+    margin-bottom: 5rem;
   }
 }
 .contact {
@@ -173,7 +181,7 @@
   }
 }
 .skillsBox {
-  width: 60rem;
+  width: 50rem;
   height: 40rem;
   background-color: #243746;
   color: #576563;
@@ -194,7 +202,6 @@
 }
 .contact_leftbox {
   width: 50%;
-  background-color: pink;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -204,6 +211,7 @@
     font-size: 2.9rem;
     color: #fff;
     font-family: "Roboto",sans-serif;
+    margin-bottom: 3rem;
   }
 }
 .contact_social {
@@ -244,7 +252,7 @@
   resize: none;
 }
 .btn {
-  width: 20rem;
+  width: 15rem;
   padding: .8rem ;
   font-size: 1.3rem;
   align-items: center;
@@ -252,4 +260,18 @@
   color: white;
   background-color: #1c3c43;
   border: none;
+  border-radius: 5rem;
+  & span {
+    margin-left: 1rem;
+  }
+}
+.footer {
+  width: 100%;
+  // padding: 2rem;
+  background-color: #243746;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
