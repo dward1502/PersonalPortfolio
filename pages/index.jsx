@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 
-import { FaGlobe, FaGithub, FaYoutube, FaRegEnvelope, FaLinkedin, FaCodepen } from "react-icons/fa";
+import { FaGlobe, FaGithub, FaYoutube, FaRegEnvelope, FaLinkedin, FaCodepen, FaArrowRight } from "react-icons/fa";
 import {
   DiCss3,
   DiReact,
@@ -36,15 +36,19 @@ export default function Home() {
         />
         <div className={styles.header_text}>
           <h1>Daniel Ward</h1>
-          <p>Fullstack Developer</p>
-          <p>and surfer.emoji</p>
-          <button>About Me</button>
+          <p>Fullstack Developer and surfer</p>
+          <button className={styles.about_btn}>About Me <FaArrowRight/></button>
         </div>
+        <div className={styles.social_header}>
+          <a href="https://github.com/dward1502" target="_blank" rel="noopener noreferrer" ><FaGithub size={60} color={"#fff"}/></a>
+              <a href="https://www.linkedin.com/in/daniel-ward-1502/" target="_blank" rel="noopener noreferrer" ><FaLinkedin size={60} color={"#fff"}/></a>
+              <a href="https://codepen.io/dward1502" target="_blank" rel="noopener noreferrer" ><FaCodepen size={60} color={"#fff"}/></a>
+          </div>
       </div>
       <section className={styles.projectHero}>
         <h1>Projects</h1>
       </section>
-      <section className={styles.projects}>
+      <section className={styles.projects} id="projects">
         <div className={styles.project}>
           <div className={styles.projectInfoBox}>
             <div className={styles.infoBox}>
@@ -168,7 +172,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.skills}>
+      <section className={styles.skills} id="skills">
         <h1>Skills &amp; Tools</h1>
         <div className={styles.skillsBox}>
           <DiCss3 size={80} className={styles.margin} />
@@ -187,7 +191,7 @@ export default function Home() {
           <SiTypescript size={80} className={styles.margin}/>
         </div>
       </section>
-      <section className={styles.contact}>
+      <section className={styles.contact} id="contact">
         <div className={styles.contactBox}>
           <div className={styles.contact_leftbox}>
             <h1>Get In Touch</h1>
@@ -202,9 +206,9 @@ export default function Home() {
             </form>
           </div>
           <div className={styles.contact_social}>
-              <a href="http://" target="_blank" rel="noopener noreferrer" ><FaGithub size={60} color={"#fff"}/></a>
-              <a href="http://" target="_blank" rel="noopener noreferrer" ><FaLinkedin size={60} color={"#fff"}/></a>
-              <a href="http://" target="_blank" rel="noopener noreferrer" ><FaCodepen size={60} color={"#fff"}/></a>
+              <a href="https://github.com/dward1502" target="_blank" rel="noopener noreferrer" ><FaGithub size={60} color={"#fff"}/></a>
+              <a href="https://www.linkedin.com/in/daniel-ward-1502/" target="_blank" rel="noopener noreferrer" ><FaLinkedin size={60} color={"#fff"}/></a>
+              <a href="https://codepen.io/dward1502" target="_blank" rel="noopener noreferrer" ><FaCodepen size={60} color={"#fff"}/></a>
           </div>
         </div>
       </section>

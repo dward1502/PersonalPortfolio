@@ -11,6 +11,38 @@
   position: absolute;
   margin-top: 20rem;
   margin-left: 15rem;
+  font-family: "Roboto", sans-serif;
+  & h1 {
+    font-size: 10rem;
+  }
+  & p {
+    font-size: 3.8rem;
+    margin: 0;
+  }
+}
+.about_btn {
+  margin-top: 4rem;
+  width: 35rem;
+  height: 6rem;
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c3c43;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.social_header{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30rem;
+  right: 20rem;
+  & a {
+    margin: 1rem;
+  }
+  
 }
 .projectHero {
   width: 100%;
@@ -52,7 +84,7 @@
   background-color: #6f8698;
   width: 40rem;
   //  border: .3rem solid #1C3C43;
-  border-radius: 3rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   padding: 2.5rem;
@@ -78,13 +110,13 @@
   align-items: center;
 }
 .image_1 {
-  width: 35rem;
+  width: 40rem;
   height: 25rem;
   position: relative;
   z-index: 10;
   transition: all 0.8s ease-in;
   &:hover {
-    scale: 1.3;
+    scale: 1.1;
     z-index: 100;
     outline: 0.5rem solid #576563;
     outline-offset: 1.5rem;
@@ -92,7 +124,7 @@
   }
 }
 .image_2 {
-  width: 30rem;
+  width: 40rem;
   height: 20rem;
   position: relative;
   z-index: 4;
@@ -100,7 +132,7 @@
   margin-top: -15rem;
   transition: all 0.8s ease-in;
   &:hover {
-    scale: 1.3;
+    scale: 1.1;
     z-index: 100;
     outline: 0.5rem solid #576563;
     outline-offset: 1.5rem;
@@ -108,15 +140,15 @@
   }
 }
 .image_3 {
-  width: 30rem;
+  width: 40rem;
   height: 20rem;
   position: relative;
   z-index: 6;
-  margin-left: -15rem;
+  margin-left: -25rem;
   margin-top: 15rem;
   transition: all 0.8s ease-in;
   &:hover {
-    scale: 1.3;
+    scale: 1.1;
     z-index: 100;
     outline: 0.5rem solid #576563;
 
@@ -187,8 +219,7 @@
   color: #576563;
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
-  // align-items: center;
+  border-radius: 1rem;
   padding: 4rem;
   margin-bottom: 10rem;
 }
@@ -261,6 +292,7 @@
   background-color: #1c3c43;
   border: none;
   border-radius: 5rem;
+  cursor: pointer;
   & span {
     margin-left: 1rem;
   }

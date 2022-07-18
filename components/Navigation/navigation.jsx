@@ -22,7 +22,7 @@ const Navigation = () => {
           
             <ul className={styles.navList}>
               <li>
-                <Link href="#">
+                <Link href="#projects">
                   <a>Projects</a>
                 </Link>
               </li>
@@ -32,12 +32,12 @@ const Navigation = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="#skills">
                   <a>Skills</a>
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="#contact">
                   <a>Contact</a>
                 </Link>
               </li>
