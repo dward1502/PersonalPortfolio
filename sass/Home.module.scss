@@ -9,19 +9,29 @@
 }
 .header_text {
   position: absolute;
-  margin-top: 20rem;
+  margin-top: 18rem;
   margin-left: 15rem;
   font-family: "Roboto", sans-serif;
   & h1 {
     font-size: 10rem;
   }
-  & p {
-    font-size: 3.8rem;
-    margin: 0;
-  }
+  // & p {
+  //   font-size: 3.8rem;
+  //   margin: 0;
+  // }
+}
+.autoText {
+  font-size: 3.6rem;
+  margin: 0rem 0rem 0rem 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.writtenText {
+  color: red;
 }
 .about_btn {
-  margin-top: 4rem;
+  margin-top: 1.5rem;
   width: 35rem;
   height: 6rem;
   font-size: 3.5rem;
@@ -306,4 +316,30 @@
   align-items: center;
   color: white;
   font-family: "Roboto", sans-serif;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+}
+.modal {
+  position: fixed;
+  top: 10vh;
+  left: 20%;
+  width: 60%;
+  padding: 3rem;
+  // height: 40vh;
+  z-index: 100;
+  overflow: hidden;
+  background-color: #fff;
+  max-height: 100vh;
+  overflow-y: auto;
+  font-family: "Roboto",sans-serif;
+  font-size: 1.8rem;
+  border-radius: 0.7rem;
 }
