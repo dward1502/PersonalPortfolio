@@ -5,11 +5,10 @@ import Typewriter from "typewriter-effect";
 
 import Projects from "../components/projects";
 import SKills from "../components/skills";
-import Contact from '../components/skills';
+import Contact from '../components/contact';
 
 import {
   FaGithub,
-  FaRegEnvelope,
   FaLinkedin,
   FaCodepen,
   FaArrowRight,
