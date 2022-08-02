@@ -43,7 +43,7 @@
   border: none;
   cursor: pointer;
 }
-.social_header{
+.social_header {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -52,7 +52,6 @@
   & a {
     margin: 1rem;
   }
-  
 }
 .projectHero {
   width: 100%;
@@ -178,7 +177,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
-  
+
   & h1 {
     font-size: 15rem;
     font-family: "Roboto", sans-serif;
@@ -251,7 +250,7 @@
   & h1 {
     font-size: 2.9rem;
     color: #fff;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 3rem;
   }
 }
@@ -264,37 +263,56 @@
     margin: 2rem;
   }
 }
-.form{
+.form {
   display: flex;
   flex-direction: column;
   margin-left: 5rem;
   font-family: "Roboto", sans-serif;
 }
-.label{
-  font-size: 1.5rem;
-  color: white;
-  font-weight: 500;
-  margin: .5rem;
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+
+  & input {
+    width: 25rem;
+    line-height: 1.8rem;
+    padding: 0.3rem;
+    color: #1c3c43;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+  }
+  & label {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.5rem;
+  }
+  & textarea {
+    width: 25.2rem;
+    height: 10rem;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    margin-bottom: 2rem;
+    resize: none;
+  }
 }
-.input {
-  width: 25rem;
-  line-height: 1.8rem;
-  padding: .3rem;
-  color: black;
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
-  border: none;
+.invalid {
+  
+  & input {
+    background: rgb(245, 165, 156);
+  }
 }
-.message {
-  width: 25rem;
-  height: 10rem;
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
-  border: none;
-  margin-bottom: 2rem;
-  resize: none;
+.errorText {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: red;
 }
+
 .btn {
   width: 15rem;
-  padding: .8rem ;
+  padding: 0.8rem;
   font-size: 1.3rem;
   align-items: center;
   justify-content: center;
@@ -305,6 +323,12 @@
   cursor: pointer;
   & span {
     margin-left: 1rem;
+  }
+  &:disabled {
+    background-color: #8bb6d4;
+    color: #1c3c43;
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
   }
 }
 .footer {
@@ -336,10 +360,18 @@
   // height: 40vh;
   z-index: 100;
   overflow: hidden;
-  background-color: #fff;
+  background: rgb(28,60,67);
+  background: linear-gradient(150deg, rgba(28,60,67,1) 0%, rgba(107,148,177,1) 64%, rgba(139,182,212,1) 94%); 
+  color: white;
   max-height: 100vh;
   overflow-y: auto;
-  font-family: "Roboto",sans-serif;
-  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
   border-radius: 0.7rem;
+  & p:first-of-type {
+    margin-top: 5rem;
+  }
+  & p {
+    text-indent: 5rem;
+  }
 }

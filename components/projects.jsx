@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import Image from 'next/image'
-import {FaGlobe, FaYoutube, FaGithub} from 'react-icons/fa'
+import {FaGlobe, FaGithub} from 'react-icons/fa'
 import styles from '../sass/Home.module.scss'
 
 const projects = () => {
@@ -10,7 +10,7 @@ const projects = () => {
         <div className={styles.project}>
             <div className={styles.projectInfoBox}>
               <div className={styles.infoBox}>
-                <h1>Title</h1>
+                <h1>Wakita &amp; Associates</h1>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Doloribus iusto expedita molestias nam, ipsa incidunt minima,
@@ -48,10 +48,7 @@ const projects = () => {
                     <FaGlobe />
                     <a href='#'>Live Link</a>
                   </div>
-                  <div className={styles.linkBtn}>
-                    <FaYoutube />
-                    <a href='#'>Walkthrough</a>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -98,10 +95,7 @@ const projects = () => {
                     <FaGlobe />
                     <a href='#'>Live Link</a>
                   </div>
-                  <div className={styles.linkBtn}>
-                    <FaYoutube />
-                    <a href='#'>Walkthrough</a>
-                  </div>
+                  
                 </div>
               </div>
             </div>

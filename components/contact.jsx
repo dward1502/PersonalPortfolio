@@ -70,55 +70,69 @@ const contact = () => {
   }
   async function sendMessageHandler(event) {
     event.preventDefault();
-    console.log('message sent');
+    console.log("message sent");
     let data = {
       nameValue,
       emailValue,
-      messageValue
-    }
+      messageValue,
+    };
     console.log(data);
   }
+  const nameClasses = nameHasError ? `${styles.inputGroup} ${styles.invalid}` : styles.inputGroup;
+  const emailClasses = emailHasError ? `${styles.inputGroup} ${styles.invalid}` : styles.inputGroup;
+
   return (
     <Fragment>
       <div className={styles.contactBox}>
         <div className={styles.contact_leftbox}>
           <h1>Get In Touch</h1>
           <form onSubmit={sendMessageHandler} className={styles.form}>
-            <label htmlFor="name" className={styles.label}>
-              Name
-            </label>
-            <input
-              type="text"
-              className={styles.input}
-              name="name"
-              id="name"
-              value={nameValue}
-              onChange={nameChangeHandler}
-              onBlur={nameBlurHandler}
-            />
-            <label htmlFor="email" className={styles.label}>
-              Email
-            </label>
-            <input
-              type="text"
-              className={styles.input}
-              name="email"
-              id="email"
-              value={emailValue}
-              onChange={emailChangeHandler}
-              onBlur={emailBlurHandler}
-            />
-            <label htmlFor="Message" className={styles.label}>
-              Message
-            </label>
-            <textarea
-              name="message"
-              className={styles.message}
-              value={messageValue}
-              onChange={messageChangeHandler}
-              onBlur={messageBlurHandler}
-            ></textarea>
-            <button className={styles.btn} type='submit' disabled={!formIsValid}>
+            <div className={nameClasses}>
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                value={nameValue}
+                onChange={nameChangeHandler}
+                onBlur={nameBlurHandler}
+              />
+              {nameHasError && (<p className={styles.errorText}>Please enter a name.</p>)}
+            </div>
+            <div className={emailClasses}>
+              <label htmlFor="email" className={styles.label}>
+                Email
+              </label>
+              <input
+                type="text"
+                className={styles.input}
+                name="email"
+                id="email"
+                value={emailValue}
+                onChange={emailChangeHandler}
+                onBlur={emailBlurHandler}
+              />
+              {emailHasError && (<p className={styles.errorText}>Please enter a valid email.</p>)}
+            </div>
+
+            <div className={styles.inputGroup}>
+              <label htmlFor="Message" className={styles.label}>
+                Message
+              </label>
+              <textarea
+                name="message"
+                className={styles.message}
+                value={messageValue}
+                onChange={messageChangeHandler}
+                onBlur={messageBlurHandler}
+              ></textarea>
+            </div>
+
+            <button
+              className={styles.btn}
+              type="submit"
+              disabled={!formIsValid}
+            >
               Send Email
               <span>
                 <FaRegEnvelope />
