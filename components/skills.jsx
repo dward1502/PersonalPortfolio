@@ -14,7 +14,7 @@ import {
   DiDocker,
   DiWordpress,
 } from "react-icons/di";
-import { SiJest, SiTypescript } from "react-icons/si";
+import { SiJest, SiTypescript, SiNextdotjs } from "react-icons/si";
 
 import styles from "../sass/Home.module.scss";
 const skills = () => {
@@ -36,6 +36,7 @@ const skills = () => {
         <DiDocker size={80} className={styles.margin} />
         <SiJest size={80} className={styles.margin} />
         <SiTypescript size={80} className={styles.margin} />
+        <SiNextdotjs size={80} className={styles.margin} />
       </div>
     </Fragment>
   );
