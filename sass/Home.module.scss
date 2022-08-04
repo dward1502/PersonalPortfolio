@@ -1,5 +1,5 @@
-@import "./variables";
-@import "./mixins";
+@import './variables';
+@import './mixins';
 
 .image_wrapper {
   width: 100%;
@@ -11,7 +11,7 @@
   position: absolute;
   margin-top: 18rem;
   margin-left: 15rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   & h1 {
     font-size: 10rem;
   }
@@ -61,7 +61,7 @@
     font-size: 30rem;
     opacity: 0.27;
     color: grey;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 }
 
@@ -93,7 +93,7 @@
   display: flex;
   flex-direction: column;
   padding: 2.5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   box-shadow: 2px 2px 16px 4px rgba(0, 0, 0, 0.5);
 
@@ -176,7 +176,7 @@
 
   & h1 {
     font-size: 15rem;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #1c3c43;
     opacity: 0.65;
     margin-bottom: 5rem;
@@ -199,7 +199,7 @@
   border-radius: 2rem;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   width: 12rem;
   display: flex;
@@ -219,7 +219,7 @@
 }
 .skillsBox {
   width: 50rem;
-  height: 40rem;
+  // height: 40rem;
   background-color: #243746;
   color: #576563;
   display: flex;
@@ -246,7 +246,7 @@
   & h1 {
     font-size: 2.9rem;
     color: #fff;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 3rem;
   }
 }
@@ -263,12 +263,12 @@
   display: flex;
   flex-direction: column;
   margin-left: 5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .inputGroup {
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 
   & input {
     width: 25rem;
@@ -294,7 +294,6 @@
   }
 }
 .invalid {
-  
   & input {
     background: rgb(245, 165, 156);
   }
@@ -302,7 +301,7 @@
 .errorText {
   margin-top: 0.5rem;
   margin-left: 1rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: red;
 }
 
@@ -335,7 +334,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .backdrop {
@@ -356,12 +355,17 @@
   // height: 40vh;
   z-index: 100;
   overflow: hidden;
-  background: rgb(28,60,67);
-  background: linear-gradient(150deg, rgba(28,60,67,1) 0%, rgba(107,148,177,1) 64%, rgba(139,182,212,1) 94%); 
+  background: rgb(28, 60, 67);
+  background: linear-gradient(
+    150deg,
+    rgba(28, 60, 67, 1) 0%,
+    rgba(107, 148, 177, 1) 64%,
+    rgba(139, 182, 212, 1) 94%
+  );
   color: white;
   max-height: 100vh;
   overflow-y: auto;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.7rem;
   border-radius: 0.7rem;
   & p:first-of-type {
@@ -369,5 +373,87 @@
   }
   & p {
     text-indent: 5rem;
+  }
+}
+
+@include respond(laptop) {
+  .header_text {
+    top: 15rem;
+    & h1 {
+      font-size: 6rem;
+    }
+  }
+  .autoText {
+    font-size: 2.8rem;
+  }
+  .about_btn {
+    width: 28rem;
+    font-size: 2.8rem;
+  }
+  .social_header {
+    top: 30rem;
+    right: 13rem;
+  }
+  .projectHero {
+    height: auto;
+    & h1 {
+      font-size: 20rem;
+    }
+  }
+  .project {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills {
+    & h1 {
+      font-size: 10rem;
+    }
+  }
+  .projectInfoBox {
+    width: 100%;
+  }
+  .projectImageBox {
+    width: 100%;
+  }
+}
+
+@include respond(phone) {
+  .autoText {
+    font-size: 1.8rem;
+  }
+  .social_header {
+    display: none;
+  }
+  .header_text {
+    margin-top: 10rem;
+    margin-left: 5rem;
+  }
+  .projectHero {
+    & h1 {
+      font-size: 10rem;
+    }
+  }
+  .projects {
+    padding: 0;
+  }
+  .skills {
+    & h1 {
+      margin: 10rem 0rem;
+      font-size: 6rem;
+    }
+  }
+  .skillsBox {
+    width: 100%;
+  }
+  .contactBox {
+    flex-direction: column;
+  }
+  .contact_leftbox {
+    // width: 100%;
+    // align-items: none;
+  }
+  .contact_social {
+    width: 100%;
   }
 }
