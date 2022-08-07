@@ -57,31 +57,22 @@ const projects = () => {
           <div className={styles.infoBox}>
             <h1>Wakita &amp; Associates</h1>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Doloribus iusto expedita molestias nam, ipsa incidunt minima,
-              asperiores culpa nesciunt voluptas distinctio, quidem dolore
-              dolores. Odio animi harum enim, facere aliquam dignissimos vitae!
+              A Real Estate sellers website made to allow users to see
+              properties in the San Diego region. Communities section allows
+              propsective buyers to get a snapshot of a community in San Diego
+              and than see properties available.
             </p>
             <ul className={styles.list}>
               <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                earum sit minima numquam dicta consequuntur quasi?
+                Created a dynamic property search that uses MLS data and
+                displays properties using Google Maps.
+              </li>
+              <li>HTML JS and CSS.</li>
+              <li>
+                Hosted on Amazon Web Services.
               </li>
               <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                earum sit minima numquam dicta consequuntur quasi?
-              </li>
-              <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                earum sit minima numquam dicta consequuntur quasi?
-              </li>
-              <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                earum sit minima numquam dicta consequuntur quasi?
-              </li>
-              <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                earum sit minima numquam dicta consequuntur quasi?
+                Styled for mobile and desktop.
               </li>
             </ul>
             <div className={styles.project_btns}>
