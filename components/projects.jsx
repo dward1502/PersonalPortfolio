@@ -42,14 +42,9 @@ const projects = () => {
         </div>
         <div className={styles.projectImageBox}>
           <div className={styles.image_1}>
-            <Image src={"/images/beach1.jpg"} layout="fill" objectFit="cover" />
+            <Image src={"/images/psarHomepage.png"} layout="fill" objectFit="contain" />
           </div>
-          <div className={styles.image_2}>
-            <Image src={"/images/beach2.jpg"} layout="fill" objectFit="cover" />
-          </div>
-          <div className={styles.image_3}>
-            <Image src={"/images/beach3.jpg"} layout="fill" objectFit="cover" />
-          </div>
+          
         </div>
       </div>
       <div className={styles.project}>
@@ -67,7 +62,7 @@ const projects = () => {
                 Created a dynamic property search that uses MLS data and
                 displays properties using Google Maps.
               </li>
-              <li>HTML JS and CSS.</li>
+              <li>Uses React and SASS.</li>
               <li>
                 Hosted on Amazon Web Services.
               </li>
@@ -88,13 +83,7 @@ const projects = () => {
         </div>
         <div className={styles.projectImageBox}>
           <div className={styles.image_1}>
-            <Image src={"/images/beach1.jpg"} layout="fill" objectFit="cover" />
-          </div>
-          <div className={styles.image_2}>
-            <Image src={"/images/beach2.jpg"} layout="fill" objectFit="cover" />
-          </div>
-          <div className={styles.image_3}>
-            <Image src={"/images/beach3.jpg"} layout="fill" objectFit="cover" />
+            <Image src={"/images/WakitaHomes.png"} layout="fill" objectFit="contain" />
           </div>
         </div>
       </div>

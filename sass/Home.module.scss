@@ -128,39 +128,7 @@
     transition: all 0.8s ease-in;
   }
 }
-.image_2 {
-  width: 40rem;
-  height: 20rem;
-  position: relative;
-  z-index: 4;
-  margin-left: -10rem;
-  margin-top: -15rem;
-  transition: all 0.8s ease-in;
-  &:hover {
-    scale: 1.1;
-    z-index: 100;
-    outline: 0.5rem solid #576563;
-    outline-offset: 1.5rem;
-    transition: all 0.8s ease-in;
-  }
-}
-.image_3 {
-  width: 40rem;
-  height: 20rem;
-  position: relative;
-  z-index: 6;
-  margin-left: -25rem;
-  margin-top: 15rem;
-  transition: all 0.8s ease-in;
-  &:hover {
-    scale: 1.1;
-    z-index: 100;
-    outline: 0.5rem solid #576563;
 
-    outline-offset: 1.5rem;
-    transition: all 0.8s ease-in;
-  }
-}
 
 .skills {
   width: 100%;
