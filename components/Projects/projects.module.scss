@@ -1,0 +1,17 @@
+.project_cont {
+    display: flex;
+    margin: 5rem 3rem;
+}
+.textBox {
+    flex: 1;
+    background-color: green;
+    height: 40rem;
+    padding: 4rem;
+}
+.img_box {
+    flex: 1;
+    background-color: yellow;
+    height: 40rem;
+    padding: 4rem;
+    position: relative;
+}

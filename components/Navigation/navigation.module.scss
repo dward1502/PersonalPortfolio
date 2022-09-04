@@ -1,21 +1,22 @@
+@import '../../sass/variables';
 @import '../../sass/mixins';
 
 .header {
-  width: 100%;
-  // height: 10rem;
-  // background-color: white;
-  //   padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
+  width: 33rem;
+  height: 100vh;
+  background-color: rgba(31, 68, 75, 85%);
   z-index: 100;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // align-content: center;
+  align-items: center;
 }
 .logo {
-  margin-left: 5rem;
-  margin-top: 2rem;
-  width: 8rem;
-  height: 8rem;
+  margin-top: 9rem;
+  margin-bottom: 7rem;
+  width: 10rem;
+  height: 10rem;
   position: relative;
 }
 .img {
@@ -24,69 +25,41 @@
 }
 .imgHero {
   height: 100vh;
-  // object-fit: cover;
+
 }
 .navBar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 15rem;
-  position: relative;
+  flex-direction: column;
+    
 }
-.navList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navListVert {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   list-style: none;
   & li {
-    padding: 3rem;
-    font-size: 1.9rem;
+    padding: 1.8rem 0rem;
     & a {
-      color: black;
-      font-size: 2.8rem;
+      color: #FFF;
+      font-size: 2.6rem;
       font-weight: 500;
       text-decoration: none;
-      font-family: 'Roboto', sans-serif;
+      font-family: $font-peralta;
     }
   }
+}
+.social {
+margin-top: 5rem;
+  & a {
+    padding: 1.5rem;
+  }
+
 }
 
 @include respond(tab-port) {
-  .navBar {
-    padding-left: 5rem;
-    padding-right: 3rem;
-  }
-  .navList {
-    & li {
-      font-size: 1.6rem;
-      & a {
-        font-size: 1.8rem;
-      }
-    }
-  }
-  .logo {
-    margin-left: 2rem;
-    margin-top: 2rem;
-    width: 4rem;
-    height: 4rem;
-  }
+
 
 }
 @include respond(phone) {
-    .logo {
-        display: none;
-    }
-    .navBar {
-        padding-left: 0rem;
-        width: 100%;
-    }
-    .navList {
-        width: 100%;
-        font-size: 1.2rem;
-       
-        & li {
-            padding: 1rem;
-        }
-    }
     
 }

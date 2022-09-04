@@ -1,8 +1,8 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { FaGithub, FaLinkedin, FaCodepen, FaRegEnvelope } from "react-icons/fa";
-import useInput from "../hooks/use-input";
+import useInput from "../../hooks/use-input";
 
-import styles from "../sass/Home.module.scss";
+import styles from "../Contact/contact.module.scss";
 
 const isNotEmpty = (value) => value.trim() !== "";
 const isEmail = (value) => value.includes("@");

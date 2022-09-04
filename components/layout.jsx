@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import Navigation from './Navigation/navigation'
+// import Navigation from './Navigation/navigation'
 import Footer from './Footer/footer'
 
 import styles from '../sass/Home.module.scss'
@@ -7,7 +7,7 @@ import styles from '../sass/Home.module.scss'
 const layout = ({children}) => {
   return (
     <Fragment>
-        <Navigation/>
+        {/* <Navigation/> */}
         <main className={styles.content}>{children}</main>
         <Footer/>
     </Fragment>
