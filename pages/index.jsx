@@ -84,7 +84,7 @@ export default function Home() {
               and deliver a working product within deadlines.
             </p>
             <p>
-              Good UI / UX is funadmental to user engagement. Connect with my
+              Good UI / UX is fundamental to user engagement. Connect with me
               today and lets work together to fulfill your needs.
             </p>
             <button className={styles.btn}>Contact Me</button>

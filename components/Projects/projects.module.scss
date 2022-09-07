@@ -1,12 +1,31 @@
+@import '../../sass/variables';
+
 .project_cont {
     display: flex;
-    margin: 5rem 3rem;
+    margin: 10rem 3rem;
 }
 .textBox {
     flex: 1;
-    background-color: green;
     height: 40rem;
     padding: 4rem;
+    padding-left: 8rem;
+    font-family: $font-peralta;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    & h1 {
+        font-size: 3.8rem;
+    }
+    & p{
+        font-size: 1.8rem;
+        margin: 0;        
+    }
+    & h3 {
+        font-size: 2.2rem;
+        margin: 0;
+    }
 }
 .img_box {
     flex: 1;
@@ -14,4 +33,32 @@
     height: 40rem;
     padding: 4rem;
     position: relative;
+}
+.tech {
+    display: flex;  
+    flex-wrap: wrap;  
+}
+.techBox {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    color: #F1E0C4;
+    background-color: #1C3C43;
+    margin: .5rem;
+}
+.icon {
+  margin:0rem 1rem;
+  color: #fff;
+}
+.btn {
+    width: 15rem;
+    height: 4rem;
+    padding: .5rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    font-family: $font-peralta;
+    color: #1C3C43;
+    background-color:#F1E0C4 ;
+    text-align: center ;
+    cursor: pointer;
 }
