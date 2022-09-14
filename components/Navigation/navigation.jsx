@@ -1,10 +1,9 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Image from "next/image";
 import {
   FaGithub,
   FaLinkedin,
   FaCodepen,
-  FaArrowRight,
 } from "react-icons/fa";
 
 import styles from "./navigation.module.scss";
@@ -12,7 +11,7 @@ import Link from "next/link";
 
 const Navigation = () => {
   return (
-    <Fragment>
+    <>
       <header className={styles.header}>
         <div className={styles.logo}>
           <Link href="/">
@@ -74,7 +73,7 @@ const Navigation = () => {
           </a>
         </div>
       </header>
-    </Fragment>
+    </>
   );
 };
 

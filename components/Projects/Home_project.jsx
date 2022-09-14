@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 import styles from './projects.module.scss';
 
-import data from '../../data/projects.json';
+import {projects} from '../../data/projects';
 
 const Home_project = () => {
-  const info = data;
+  const info = projects;
 
   return (
     <Fragment>

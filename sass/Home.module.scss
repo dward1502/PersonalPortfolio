@@ -1,6 +1,9 @@
 @import "./variables";
 @import "./mixins";
 
+.content {
+  height: 100%;
+}
 .image_wrapper {
   z-index: 0;
   display: flex;
