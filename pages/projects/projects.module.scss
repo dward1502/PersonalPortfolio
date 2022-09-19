@@ -1,0 +1,116 @@
+@import '../../sass/variables';
+
+.content {
+  width: 100%;
+}
+.title {
+  margin-top: 10rem;
+  margin-left: 10rem;
+  font-family: $font-peralta;
+  font-size: 3.4rem;
+}
+.info {
+  display: flex;
+  // height: 50rem;
+  margin: 6rem 0rem;
+  padding: 4rem;
+  color: black;
+}
+.description {
+  padding: 3rem;
+  font-size: 2.2rem;
+  font-family: $font-poppins;
+  flex: 1;
+  & p {
+    text-indent: 2.5rem;
+    font-size: 1.8rem;
+  }
+}
+.tech {
+  padding: 3rem 4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  & h3 {
+    font-size: 2.6rem;
+    font-family: $font-peralta;
+  }
+}
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+.techBox {
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: $font-milonga;
+  padding: 0.5rem 2rem;
+  border-radius: 5rem;
+  border: none;
+  background-color: #f1e0c4;
+  color: rgb(28, 60, 67);
+}
+.links {
+  margin-top: 10rem;
+  & a {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: $font-milonga;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgb(28, 60, 67);
+    color: rgba(139, 182, 212, 1);
+    cursor: pointer;
+    margin: 2rem;
+    text-decoration: none;
+  }
+}
+.deviceImages {
+  display: flex;
+  margin: 10rem 0rem;
+}
+.desktopImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageBoxDesk {
+  width: 50rem;
+  height: 40rem;
+  position: relative;
+  object-fit: contain;
+}
+.mobileImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageBoxMobile {
+  width: 20rem;
+  height: 40rem;
+  position: relative;
+  object-fit: contain;
+}
+.pages {
+    margin: 15rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pagesBox{
+    width: 30rem;
+    height: 80rem;
+    // background-color: black;
+    position: relative;
+    margin: 2rem;
+}
+.img {
+    max-height: 100%;
+    max-width: 100%;
+}
