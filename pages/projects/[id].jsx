@@ -6,6 +6,9 @@ import { projects } from '../../data/projects';
 import styles from './projects.module.scss';
 
 const SpecificProjectPage = ({ projectInfo }) => {
+  const img = projectInfo.image;
+  const images = projectInfo.projectImages;
+
   return (
     <>
       <Navigation />
@@ -13,28 +16,26 @@ const SpecificProjectPage = ({ projectInfo }) => {
         <h1 className={styles.title}>{projectInfo.title}</h1>
         <section className={styles.info}>
           <div className={styles.description}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-              magnam obcaecati labore delectus accusantium consequatur velit
-              incidunt laudantium, repellendus maiores porro mollitia nihil
-              soluta voluptates aperiam optio error tempore vel nemo quos?
-              Sapiente eos voluptas pariatur molestias. Aliquam vero explicabo
-              perferendis delectus velit beatae maiores dolores nam. Libero,
-              quidem recusandae.
-            </p>
+            <p>{projectInfo.description}</p>
             <ul>
-              <li>Information of project in bullet points</li>
-              <li>Information of project in bullet points</li>
-              <li>Information of project in bullet points</li>
+              {projectInfo.info.map((text, key) => {
+                return <li key={key}>{text}</li>;
+              })}
             </ul>
           </div>
           <div className={styles.tech}>
             <h3>Technologies Used</h3>
             <div className={styles.techList}>
-              <div className={styles.techBox}>HTML</div>
+              {projectInfo.tech.map((tech, key) => {
+                return (
+                  <div className={styles.techBox} key={key}>
+                    {tech}
+                  </div>
+                );
+              })}
             </div>
             <div className={styles.links}>
-              <a href='#'>Live link</a>
+              <a href={projectInfo.link}>Live link</a>
               <a href='#'>Github</a>
             </div>
           </div>
@@ -43,7 +44,7 @@ const SpecificProjectPage = ({ projectInfo }) => {
           <div className={styles.desktopImage}>
             <div className={styles.imageBoxDesk}>
               <Image
-                src={'/images/psarHomepage.png'}
+                src={img}
                 alt='Picture of a breaking wave.'
                 layout='fill'
                 objectFit='cover'
@@ -55,7 +56,7 @@ const SpecificProjectPage = ({ projectInfo }) => {
             <div className={styles.imageBoxMobile}>
               <Image
                 className={styles.img}
-                src={'/images/psar_phone.png'}
+                src={images[0]}
                 alt='Picture of a breaking wave.'
                 layout='fill'
                 objectFit='cover'
@@ -68,7 +69,7 @@ const SpecificProjectPage = ({ projectInfo }) => {
           <div className={styles.pagesBox}>
             <Image
               className={styles.img}
-              src={'/images/psar_home_full.png'}
+              src={images[1]}
               alt='Picture of a breaking wave.'
               layout='fill'
               objectFit='cover'
@@ -78,7 +79,7 @@ const SpecificProjectPage = ({ projectInfo }) => {
           <div className={styles.pagesBox}>
             <Image
               className={styles.img}
-              src={'/images/psar_join_full.png'}
+              src={images[2]}
               alt='Picture of a breaking wave.'
               layout='fill'
               objectFit='cover'
@@ -88,7 +89,7 @@ const SpecificProjectPage = ({ projectInfo }) => {
           <div className={styles.pagesBox}>
             <Image
               className={styles.img}
-              src={'/images/psar_crmls_full.png'}
+              src={images[3]}
               alt='Picture of a breaking wave.'
               layout='fill'
               objectFit='cover'
