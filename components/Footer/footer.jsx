@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from '../../sass/Home.module.scss'
+import styles from './footer.module.scss';
 
 const footer = () => {
   return (

@@ -22,12 +22,12 @@ const pageNav = () => {
         <nav className={styles.navBarPage}>
           <ul className={styles.navList}>
             <li>
-              <Link href="#about">
+              <Link href="/about">
                 <a>About</a>
               </Link>
             </li>
             <li>
-              <Link href="#projects">
+              <Link href="/projects">
                 <a>Projects</a>
               </Link>
             </li>

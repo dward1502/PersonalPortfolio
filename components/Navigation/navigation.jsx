@@ -28,12 +28,12 @@ const Navigation = () => {
         <nav className={styles.navBar}>
           <ul className={styles.navListVert}>
             <li>
-              <Link href="#about">
+              <Link href="/about">
                 <a>About</a>
               </Link>
             </li>
             <li>
-              <Link href="#projects">
+              <Link href="/projects">
                 <a>Projects</a>
               </Link>
             </li>

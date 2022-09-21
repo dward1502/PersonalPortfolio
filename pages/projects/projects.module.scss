@@ -114,3 +114,29 @@
     max-height: 100%;
     max-width: 100%;
 }
+.project_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & h1 {
+    margin-top: 10rem;
+    font-size: 9.5rem;
+    color: rgba($color: #fff, $alpha: .7);
+    z-index: 20;
+  }
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 15rem 10rem 15rem;
+  z-index: 100;
+}
+.card {
+  width: 25rem;
+  height: 20rem;
+  margin: 2rem;
+  background-color: tan;
+}
