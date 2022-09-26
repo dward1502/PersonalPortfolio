@@ -16,7 +16,7 @@ const Home_project = () => {
           <div className={styles.project_cont} key={i}>
             <div className={styles.textBox}>
               <h1>{project.title}</h1>
-              <p>Description</p>
+              <p>{project.description}</p>
               <Link href={project.route}>
                 <button className={styles.btn}>More Details</button>
               </Link>
@@ -32,8 +32,8 @@ const Home_project = () => {
                 src={project.image}
                 alt={`Picture of home page ${project.title}`}
                 layout='fill'
-                objectFit='cover'
-                // objectPosition='center'
+                // objectFit='cover'
+                
               />
             </div>
           </div>

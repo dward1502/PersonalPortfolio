@@ -20,8 +20,6 @@ import {
   SiJest,
 } from "react-icons/si";
 
-// import Projects from "../components/projects";
-// import SKills from "../components/skills";
 import Contact from "../components/Contact/Contact";
 
 import Modal from "../components/Modal/modalOverlay";

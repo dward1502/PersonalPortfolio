@@ -111,8 +111,9 @@
     margin: 2rem;
 }
 .img {
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
 .project_content {
   display: flex;
@@ -135,8 +136,10 @@
   z-index: 100;
 }
 .card {
-  width: 25rem;
+  width: 30rem;
   height: 20rem;
   margin: 2rem;
   background-color: tan;
+  position: relative;
+  cursor: pointer;
 }
