@@ -76,6 +76,7 @@ const contact = () => {
       emailValue,
       messageValue,
     };
+    sendContactData(data)
     console.log(data);
   }
   const nameClasses = nameHasError ? `${styles.inputGroup} ${styles.invalid}` : styles.inputGroup;

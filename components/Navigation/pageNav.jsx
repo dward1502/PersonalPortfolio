@@ -37,7 +37,7 @@ const pageNav = () => {
               </Link>
             </li>
             <li>
-              <Link href="#contact">
+              <Link href="/contact">
                 <a>Contact</a>
               </Link>
             </li>
