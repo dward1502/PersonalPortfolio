@@ -18,8 +18,8 @@ export default function (req, res) {
     host: "smtp.gmail.com",
     secure: true,
     auth: {
-      user: 'danobrryder@gmail.com',
-      pass: 'qraxefxwspkqkaxk',
+      user: EMAIL,
+      pass: PASSWORD,
     },
   });
 
