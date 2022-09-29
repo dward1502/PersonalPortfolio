@@ -89,10 +89,13 @@ margin-top: 5rem;
 }
 
 
-@include respond(tab-port) {
-
-
-}
-@include respond(phone) {
-    
+@include respond(phone-md) {
+  .navList {
+    margin-right: 0;
+    & li{
+      & a{
+        font-size: 1.8rem;
+      }
+    }
+  }
 }

@@ -86,7 +86,7 @@ const contact = () => {
     <Fragment>
       <div className={styles.contactBox}>
         <div className={styles.contact_leftbox}>
-          <h1>Get In Touch</h1>
+          <h1>Looking Forward to Hear From You</h1>
           <form onSubmit={sendMessageHandler} className={styles.form}>
             <div className={nameClasses}>
               <label htmlFor="name">Name</label>
@@ -130,14 +130,14 @@ const contact = () => {
             </div>
 
             <button
-              className={styles.btn}
+              className={styles.submit}
               type="submit"
               disabled={!formIsValid}
             >
               Send Email
-              <span>
-                <FaRegEnvelope />
-              </span>
+              
+                <FaRegEnvelope className={styles.ml_1} />
+              
             </button>
           </form>
         </div>

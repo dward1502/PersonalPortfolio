@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Typewriter from "typewriter-effect";
+import Link from 'next/link'
 import Navigation from "../components/Navigation/navigation";
 import ParallelText from "../components/UI/tools";
 import Projects from '../components/Projects/Home_project'
@@ -85,7 +85,10 @@ export default function Home() {
               Good UI / UX is fundamental to user engagement. Connect with me
               today and lets work together to fulfill your needs.
             </p>
+            <Link href={'/contact'}>
             <button className={styles.btn}>Contact Me</button>
+            </Link>
+            
           </div>
 
           <div></div>

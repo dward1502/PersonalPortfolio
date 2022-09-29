@@ -1,8 +1,8 @@
-import React from 'react'
-import Navigation from '../../components/Navigation/pageNav'
-import Image from 'next/image'
+import React from "react";
+import Navigation from "../../components/Navigation/pageNav";
+import Image from "next/image";
 
-import styles from './about.module.scss';
+import styles from "./about.module.scss";
 
 const index = () => {
   return (
@@ -11,7 +11,15 @@ const index = () => {
       <div className={styles.content}>
         <div className={styles.header}>
           <h1>Daniel Ward</h1>
-          <div className={styles.img}>{/* <Image /> */}</div>
+          <div className={styles.img}>
+            <Image
+              src={"/images/danielProfile.png"}
+              alt="Picture of a breaking wave."
+              layout="fill"
+              className={styles.pic}
+              
+            />
+          </div>
         </div>
         <div className={styles.text}>
           <p>
@@ -36,7 +44,7 @@ const index = () => {
             applications using MERN. I have a good handle on object/functional
             programming in Javascript and solving logical problems. I find that
             I have a passion connecting needs of companies/individuals and
-            creating an internet based app/service to help them in their need.{' '}
+            creating an internet based app/service to help them in their need.
           </p>
           <p>
             I have worked in Javascript and have a good handle on
@@ -46,17 +54,17 @@ const index = () => {
             deploying in AWS infrastructure. My experience in backend software
             includes Node.js, MySQL, MongoDB, and a little of python. I am well
             versed in working in Git and understand the logic of working with a
-            team utilizing Git.{' '}
+            team utilizing Git.
           </p>
           <p>
             Applying these lessons in software development I believe is
             essential to be successful. I am very communicative and always
-            wanting to learn how to do better in my software development career.{' '}
+            wanting to learn how to do better in my software development career.
           </p>
         </div>
       </div>
     </>
   );
-}
+};
 
-export default index
+export default index;

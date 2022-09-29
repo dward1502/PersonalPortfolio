@@ -35,8 +35,8 @@ const SpecificProjectPage = ({ projectInfo }) => {
               })}
             </div>
             <div className={styles.links}>
-              <a href={projectInfo.link}>Live link</a>
-              <a href='#'>Github</a>
+              <a href={projectInfo.link} target="_blank">Live link</a>
+              <a href='#' target="_blank">Github</a>
             </div>
           </div>
         </section>
@@ -47,8 +47,6 @@ const SpecificProjectPage = ({ projectInfo }) => {
                 src={img}
                 alt='Picture of a breaking wave.'
                 layout='fill'
-                objectFit='cover'
-                objectPosition='center'
               />
             </div>
           </div>
@@ -59,8 +57,7 @@ const SpecificProjectPage = ({ projectInfo }) => {
                 src={images[0]}
                 alt='Picture of a breaking wave.'
                 layout='fill'
-                objectFit='cover'
-                objectPosition='center'
+                
               />
             </div>
           </div>
@@ -72,8 +69,7 @@ const SpecificProjectPage = ({ projectInfo }) => {
               src={images[1]}
               alt='Picture of a breaking wave.'
               layout='fill'
-              objectFit='cover'
-              objectPosition='center'
+              
             />
           </div>
           <div className={styles.pagesBox}>
@@ -82,8 +78,7 @@ const SpecificProjectPage = ({ projectInfo }) => {
               src={images[2]}
               alt='Picture of a breaking wave.'
               layout='fill'
-              objectFit='cover'
-              objectPosition='center'
+              
             />
           </div>
           <div className={styles.pagesBox}>
@@ -92,8 +87,7 @@ const SpecificProjectPage = ({ projectInfo }) => {
               src={images[3]}
               alt='Picture of a breaking wave.'
               layout='fill'
-              objectFit='cover'
-              objectPosition='center'
+              
             />
           </div>
         </section>

@@ -31,11 +31,11 @@ const pageNav = () => {
                 <a>Projects</a>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="#skills">
                 <a>My Skills</a>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/contact">
                 <a>Contact</a>

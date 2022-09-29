@@ -6,7 +6,7 @@ const contact = () => {
   return (
     <>
       <Navigation />
-      <div>
+      <div style={{height:`80vh`}}>
         
         <ContactForm/>
       </div>

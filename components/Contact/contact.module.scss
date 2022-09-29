@@ -1,3 +1,5 @@
+@import '../../sass/mixins';
+
 .contactBox {
     display: flex;
     padding: 4rem;
@@ -31,7 +33,7 @@
   .form {
     display: flex;
     flex-direction: column;
-    margin-left: 5rem;
+    // margin-left: 2rem;
     font-family: 'Roboto', sans-serif;
   }
   .inputGroup {
@@ -40,12 +42,12 @@
     font-family: 'Roboto', sans-serif;
   
     & input {
-      width: 28rem;
+      width: 34.7rem;
       line-height: 1.8rem;
       padding: 0.3rem;
       color: #1c3c43;
-      box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
-      border: none;
+      box-shadow: 1px 1px 2px 1px rgba(28, 60, 67, 0.4);
+      border: .1rem solid rgb(28, 60, 67);
     }
     & label {
       font-size: 1.5rem;
@@ -54,10 +56,10 @@
       margin: 0.5rem;
     }
     & textarea {
-      width: 28.2rem;
+      width: 35rem;
       height: 10rem;
-      box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
-      border: none;
+      box-shadow: 1px 1px 2px 1px rgba(28, 60, 67, 0.4);
+      border: .1rem solid rgb(28, 60, 67);
       margin-bottom: 2rem;
       resize: none;
     }
@@ -72,4 +74,32 @@
     margin-left: 1rem;
     font-family: 'Roboto', sans-serif;
     color: red;
+  }
+  .submit {
+    width: 50%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1c3c43;
+    border: .1rem solid #1c3c43;
+    box-shadow: 1px 1px 2px 1px rgba(28, 60, 67, 0.4);
+    cursor: pointer;
+
+  }
+  .ml_1 {
+    margin-left: 1rem;
+  }
+
+  @include respond(sm) {
+    .contactBox{
+      flex-direction: column;
+    }
+    .contact_leftbox{
+      width: 100%;
+    }
+    .contact_social{
+      width: 100%;
+    }
   }

@@ -1,4 +1,5 @@
 @import '../../sass/variables';
+@import '../../sass/mixins';
 
 .content {
   width: 100%;
@@ -27,7 +28,7 @@
   }
 }
 .tech {
-  padding: 3rem 4rem;
+  padding: 3rem 5rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -51,6 +52,7 @@
   border: none;
   background-color: #f1e0c4;
   color: rgb(28, 60, 67);
+  margin: 1rem;
 }
 .links {
   margin-top: 10rem;
@@ -143,3 +145,10 @@
   position: relative;
   cursor: pointer;
 }
+
+@include respond(sm) {
+  .info {
+    flex-direction: column;
+  }
+}
+
