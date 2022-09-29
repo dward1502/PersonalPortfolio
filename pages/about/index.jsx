@@ -1,12 +1,16 @@
 import React from "react";
 import Navigation from "../../components/Navigation/pageNav";
 import Image from "next/image";
+import Seo from '../../components/SEO/seo';
 
 import styles from "./about.module.scss";
 
 const index = () => {
+  const title = "About Daniel Ward";
+  const description = "About page describing Daniel Ward's journey as a software developer and his skills that he can bring to a company / potential contract."
   return (
     <>
+    <Seo title={title} description={description} />
       <Navigation />
       <div className={styles.content}>
         <div className={styles.header}>
