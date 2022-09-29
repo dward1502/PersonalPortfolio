@@ -2,6 +2,8 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Navigation from '../../components/Navigation/pageNav';
+import Seo from '../../components/SEO/seo';
+
 import { projectList } from '../../data/listOfProjects';
 
 import styles from './projects.module.scss';
